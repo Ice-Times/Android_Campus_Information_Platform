@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/biankuang"
+            android:text="类型"
+            android:textColor="#000000"
+            android:textSize="35sp"
+            android:gravity="center_horizontal"/>
+
+
+        <TextView
+            android:id="@+id/t2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="物品"
+            android:textColor="#000000"
+            android:textSize="35sp"
+            android:background="@drawable/biankuang"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/t3"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="发布时间"
+            android:textColor="#000000"
+            android:textSize="35sp"
+            android:background="@drawable/biankuang"
+            android:gravity="center_horizontal"/>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/bt1"
+        android:layout_width="71dp"
+        android:layout_height="71dp"
+        android:layout_alignBottom="@id/MainLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="160dp"
+        android:layout_marginRight="160dp"
+        android:background="@drawable/bt"
+        android:text="+"
+        android:textSize="100px"
+        tools:ignore="NotSibling" />
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:layout_marginTop="48dp"
+        android:orientation="vertical"
+        tools:context=".page1">
+
+        <ListView
+            android:id="@+id/listview1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+</RelativeLayout>
